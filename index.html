@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CallPlacer</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div  class="navigation">
+                <div class="logo">
+                    <i class="nav-logo"></i>
+                    <a href="index.html"><h1>CallPlacer</h1></a>
+                </div>
+                <nav class="nav-menu-wrapper"> 
+                    <ul>
+                        <li><a href="#">Про нас</a></li>
+                        <li><a href="#">Тарифи</a></li>
+                        <li><a href="#">Заявки</a></li>
+                        <li><a href=""><i class="nav-menu-icon"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="menu-button"></div>
+            </div>
+        </header>
+        <main>
+            <div class="page-wrapper">
+                <section class="registration-section">
+                    <div class="registration-form-wrapper">
+                        <div class="registration-form-info-wrapper">
+                            <div class="registration-form-info-title"><h3><span id="tarif-info-title">Rabbit</span></h3></div><br>
+                            <h3>ШВИДКІСТЬ: до <span id="tarif-info-speed">100</span> мб/с</h3>
+                            <h3>ЦІНА: <span id="tarif-info-price">100</span> грн/міс</h3>
+                            <img class="registration-form-info-img" id="tarif-info-img" src="./Assets/Tarif img.svg" alt="planet-img">
+                        </div>
+                        <div class="form-card flex-column">
+                            <div class="form-wrapper">
+            
+                                <h2 class="form-title">Електронна черга на змінення тарифів</h2>
+            
+                                <form class="registration-form flex-column"action="submit">
+                                    <label class="form-label" for="full_name">ФІО</label>
+                                    <input class="form-input" type="text" id="full_name" name="full_name" placeholder="Введіть ФІО" required>
+            
+                                    <label class="form-label" for="phone" required>Телефон</label>
+                                    <input class="form-input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="+38 (_) __ __ __" required>
+            
+                                    <label class="form-label" for="select">Тариф</label>
+                                    <select class="form-input form-input-select"name="" id="select" required>
+                                        <option value="snail">Snail</option>
+                                        <option value="rabbit" selected>Rabbit</option>
+                                        <option value="guepard">Guepard</option>
+                                    </select>
+                                    <button class="form-submit-button" type="submit" >Зареєструватися</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer secondary-text">
+            <span class="footer-credentials">
+                © 2022 CallPlacer. Всі права захищені.
+            </span>
+        </footer>
+    </body>
+</html>
