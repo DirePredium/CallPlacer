@@ -98,13 +98,13 @@ header ul li a:hover {
 
 /* main */
 
-.registration-form-info-wrapper {
+#registration-form-info-wrapper {
     height: 100%;
     width: 300px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(rgb(0, 255, 149), rgb(252, 205, 75));
+    background: linear-gradient(rgb(24, 53, 150), rgb(53, 231, 255));
     border: 1px solid #777;
     border-radius: 20px;
     box-shadow: 2px 2px 7px 3px #ccc;
